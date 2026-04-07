@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Capture and Send</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        video, canvas {
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+        img {
+            max-width: 300px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Take a Photo and Send It</h1>
+    <video id="video" width="320" height="240" autoplay></video>
+    <button id="capture">Capture Photo</button>
+    <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+    <br>
+    <img id="capturedImage" style="display:none;" alt="Captured Photo">
+    <br>
+    <button id="sendEmail" style="display:none;">Send Photo to Me</button>
+    <br>
+    <h2>Your Photo and My Photo</h2>
+    <img id="userPhoto" style="display:none;" alt="Your Photo">
+    <img src="https://via.placeholder.com/300" alt="My Photo"> <!-- Placeholder for your photo -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html></content>
+<parameter name="filePath">c:\Users\dell\Desktop\PROJECT OMEGA\index.html
